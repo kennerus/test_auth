@@ -9,11 +9,28 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: '',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    }
+      name: 'Домашняя страница',
+      component: () => import('./views/Home.vue')
+    },
+    {
+      path: '/signup',
+      name: 'Регистрация',
+      component: () => import('./views/Home.vue')
+    },
+    {
+      path: '/signin',
+      name: 'Авторизация',
+      component: () => import('./views/Home.vue')
+    },
+    {
+      path: '/email-confirmation',
+      name: 'Подтверждение почты',
+      component: () => import('./views/Home.vue')
+    },
+    {
+      path: '/password-reset',
+      name: 'Сброс пароля',
+      component: () => import('./views/Home.vue')
+    },
   ]
 })
