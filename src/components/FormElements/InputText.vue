@@ -12,7 +12,7 @@
            type="text"
            class="base-input"
            :placeholder="fieldData.placeholder"
-           :name="fieldData.inputName"
+           :name="fieldData.name"
            :class="fieldData.className"
            :value="value"
            @input="inputEvents_inputEmit($event.target.value)"
@@ -21,8 +21,12 @@
 </template>
 
 <script>
+  import MixinInputData from '../../mixins/MixinInputData';
+  import MixinInputMethods from '../../mixins/MixinInputMethods';
+
   export default {
-    name: 'InputText'
+    name: 'InputText',
+    mixins: [MixinInputData, MixinInputMethods]
   }
 </script>
 

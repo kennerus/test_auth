@@ -12,7 +12,7 @@
            type="email"
            class="base-input"
            :placeholder="fieldData.placeholder"
-           :name="fieldData.inputName"
+           :name="fieldData.name"
            :class="fieldData.className"
            :value="value"
            @input="inputEvents_inputEmit($event.target.value)"

@@ -7,5 +7,6 @@ export default {
   classNameLabel: '',
   className: '',
   placeholder: '',
-  component: ''
+  component: '',
+  validationRule: null
 };

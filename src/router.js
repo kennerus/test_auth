@@ -15,7 +15,7 @@ export default new Router({
     {
       path: '/signup',
       name: 'Регистрация',
-      component: () => import('./views/Home.vue')
+      component: () => import('./views/Auth/AuthRegistration.vue')
     },
     {
       path: '/signin',

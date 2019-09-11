@@ -3,9 +3,8 @@ import actions from './actions';
 import mutations from './mutations';
 
 const state = {
-  user: {
-
-  }
+  token: localStorage.getItem('user-token') || '',
+  status: '',
 };
 
 export default {

@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="flex flex_ai-center">
     <router-view/>
   </div>
 </template>
@@ -19,6 +19,10 @@
     color: #2c3e50;
   }
 
+  #app {
+    min-height: 100vh;
+  }
+
   .container {
     max-width: 1140px;
     margin: 0 auto;
@@ -33,6 +37,18 @@
 
     &-title {
       text-align: center;
+    }
+
+    &-form {
+      display: flex;
+      flex-direction: column;
+      width: 450px;
+      box-sizing: border-box;
+      margin: 0 auto;
+      padding: 30px;
+
+      border-radius: 4px;
+      box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.07);
     }
 
     &-input {
@@ -52,6 +68,23 @@
       &-wrap:first-child {
         margin-top: 0;
       }
+    }
+  }
+
+  /**
+   * atomic styles
+   */
+  .flex {
+    display: flex;
+
+    &_ai-center {
+      align-items: center;
+    }
+  }
+
+  .mt {
+    &-20 {
+      margin-top: 20px;
     }
   }
 </style>
